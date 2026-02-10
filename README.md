@@ -8,6 +8,13 @@ AI that reads before it answers
 ➡️ The AI **searches your data first**, then answers using what it found.
 
 ---
+## Comment ça marche (RAG) ?
+RAG = Retrieval-Augmented Generation
+
+Retrieval (Récupération) : Chercher les passages pertinents dans tes documents
+
+Augmented (Augmentation) : Donner ces passages au modèle IA
+Generation : Le modèle génère une réponse basée sur ces infos
 
 ## 1️⃣ RAG vs Normal AI (intuition)
 
