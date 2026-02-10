@@ -83,3 +83,5 @@ Vector DB: FAISS, Pinecone, Chroma
 Backend: Python / Node.js
 
 LLM: GPT, Claude, LLaM
+
+Source : https://youtu.be/_HQ2H_0Ayy0?si=wQmAuqoKjJfeIsKj 
