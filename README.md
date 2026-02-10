@@ -1,0 +1,85 @@
+Retrieval-Augmented Generation
+
+RAG stands for Retrieval-Augmented Generation.
+It’s a smart way to make AI answers more accurate and up-to-date by letting the model look things up before it responds.
+
+The idea in plain English
+
+Instead of an AI answering only from memory, RAG lets it:
+
+Search for relevant info (documents, PDFs, database rows, web pages, etc.)
+
+Retrieve the most useful pieces
+
+Generate an answer using that retrieved info
+
+So it’s basically:
+
+🔍 Search first → 🧠 Answer smarter
+
+Why RAG exists
+
+Normal LLMs:
+
+Can hallucinate
+
+Don’t know your private data
+
+Are limited to their training cutoff
+
+RAG fixes that by plugging the model into your own data.
+
+How RAG works (step by step)
+
+You ask a question
+“What are our company’s leave policies?”
+
+The system converts your question into embeddings
+
+It searches a vector database (Pinecone, FAISS, Chroma, etc.)
+
+Retrieves the most relevant documents
+
+Sends them + your question to the LLM
+
+The LLM answers based on real sources
+
+Simple architecture
+User → Query
+      ↓
+  Vector Search (Docs)
+      ↓
+ Retrieved Context
+      ↓
+   LLM → Answer
+
+Example use cases
+
+📄 Chat with PDFs / docs
+
+🏢 Internal company chatbot
+
+📚 Study assistant using course material
+
+🏥 Medical / legal knowledge systems
+
+🛠️ Dev tools (chat with codebase)
+
+RAG vs Fine-tuning
+RAG	Fine-tuning
+Uses external data	Changes model weights
+Easy to update data	Expensive
+Great for facts	Great for style/behavior
+Less hallucination	Still can hallucinate
+
+👉 Most real systems use RAG
+
+Tech stack example
+
+Embeddings: OpenAI / HuggingFace
+
+Vector DB: FAISS, Pinecone, Chroma
+
+Backend: Python / Node.js
+
+LLM: GPT, Claude, LLaM
