@@ -14,6 +14,7 @@ RAG = Retrieval-Augmented Generation
 Retrieval (Récupération) : Chercher les passages pertinents dans tes documents
 
 Augmented (Augmentation) : Donner ces passages au modèle IA
+
 Generation : Le modèle génère une réponse basée sur ces infos
 
 ## 1️⃣ RAG vs Normal AI (intuition)
